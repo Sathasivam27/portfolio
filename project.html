@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <div class="container mx-auto px-6 py-12">
+        <!-- Title -->
+        <div class="text-center mb-12" data-aos="fade-down">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text">My Projects</span>
+            </h1>
+            <p class="text-gray-400 text-lg">A showcase of my electronics and IoT creations</p>
+            <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto mt-4"></div>
+        </div>
+
+        <!-- Project List -->
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+            <!-- Project Card -->
+            <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-purple-600 transition duration-300">
+                <h2 class="text-xl font-semibold gradient-text mb-2">Transmission Line Control System</h2>
+                <p class="text-gray-300">An IoT-based system to monitor and control transmission lines using relay, current sensors, and NodeMCU.</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-purple-600 transition duration-300">
+                <h2 class="text-xl font-semibold gradient-text mb-2">WiFi Car</h2>
+                <p class="text-gray-300">A remotely controlled car using NodeMCU, motor driver, and mobile WiFi hotspot.</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-purple-600 transition duration-300">
+                <h2 class="text-xl font-semibold gradient-text mb-2">Automatic Plant Watering System</h2>
+                <p class="text-gray-300">A system that uses moisture sensors and relays to automate plant irrigation.</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-purple-600 transition duration-300">
+                <h2 class="text-xl font-semibold gradient-text mb-2">Bluetooth Car</h2>
+                <p class="text-gray-300">A simple mobile-controlled car using Arduino, Bluetooth module, and motor driver.</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-purple-600 transition duration-300">
+                <h2 class="text-xl font-semibold gradient-text mb-2">Home Automation</h2>
+                <p class="text-gray-300">Smart home system using NodeMCU, relay modules, and mobile app integration.</p>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="400">
+            <a href="index.html" class="btn-hover inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg font-medium rounded-full shadow-lg hover:from-blue-700 hover:to-purple-700 focus:outline-none">
+                ← Back to Home
+            </a>
+        </div>
+    </div>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
+</body>
+</html>
